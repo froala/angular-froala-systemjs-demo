@@ -9,13 +9,6 @@ A quick starter to use angular-froala-wysiwyg with SystemJS
 npm install angular-froala-wysiwyg --save
 ```
 
-- open `src/index.html` and add
-
-```html
-<link rel="stylesheet" href="node_modules/froala-editor/css/froala_editor.pkgd.min.css">
-<link rel="stylesheet" href="node_modules/froala-editor/css/froala_style.min.css">
-```
-
 - open `src/app/app.module.ts` and add
 
 ```typescript
@@ -37,6 +30,16 @@ import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
    imports: [FroalaEditorModule.forRoot(), FroalaViewModule.forRoot(), ... ],
    ...
 })
+```
+
+- open `angular.json` file and insert a new entry into the `styles` array
+
+```json
+"styles": [
+  "styles.css",
+  "./node_modules/froala-editor/css/froala_editor.pkgd.min.css",
+  "./node_modules/froala-editor/css/froala_style.min.css",
+]
 ```
 
 - open `src/app/app.component.ts` file and add to the template

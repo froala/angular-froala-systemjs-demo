@@ -4,6 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
+// Import all Froala Editor plugins.
+// import 'froala-editor/js/plugins.pkgd.min.js';
+
+// Import a single Froala Editor plugin.
+// import 'froala-editor/js/plugins/align.min.js';
+
+// Import a Froala Editor language file.
+// import 'froala-editor/js/languages/de.js';
+
 @NgModule({
   declarations: [
     AppComponent
